@@ -1,0 +1,16 @@
+.lp-panel {
+  height: 100%;
+}
+
+#above-the-fold {
+  background-color: #333;
+  color: white;
+}
+
+#above-the-fold #lp-brand {
+  font-size: 50px;
+}
+
+#above-the-fold #lp-headline {
+  font-size: 25px;
+}

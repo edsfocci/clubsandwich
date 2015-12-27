@@ -1,8 +1,43 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html {
+  height: 100%;
 }
 
-a {
-  color: #00B7FF;
+body {
+  margin-top: 50px;
+  height: calc(100% - 50px);
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+/*.navbar-inverse {*/
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.btn-inverse {
+  padding: 6px 12px !important;
+  background-color: #222;
+  color: white !important;
+  border-color: white;
+}
+
+.btn-inverse:hover {
+  background-color: #222;
+  border-color: white;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Probably belongs somewhere else */
+.input-group-addon {
+  min-width: 40px;
 }

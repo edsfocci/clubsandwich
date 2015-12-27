@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin-top: 50px;
+  height: calc(100% - 50px);
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
