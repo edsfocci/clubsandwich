@@ -1,4 +1,4 @@
-extends demoLayout
+extends layout
 
 //- block stylesheets
 //-   link(href='/stylesheets/index.css', rel='stylesheet')
@@ -6,7 +6,7 @@ extends demoLayout
 block content
   h1 User Registration
 
-  form(action='/demo/users/signup', method='post')
+  form(action='/demo/signup', method='post')
     div.form-group
       div.input-group
         span.input-group-addon

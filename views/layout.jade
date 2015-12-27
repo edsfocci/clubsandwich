@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
+    title #{subTitle} Club Sandwich #{demo ? 'Demo' : ''}
 
     link(href='//oss.maxcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', rel='stylesheet')
     link(href='//oss.maxcdn.com/fontawesome/4.5.0/css/font-awesome.min.css', rel='stylesheet')
@@ -13,7 +13,10 @@ html
       div.container-fluid
         ul.nav.navbar-nav.navbar-right
           li
-            a.btn.btn-default.btn-inverse.navbar-btn(href='/demo') View Demo
+            if (demo)
+              a.btn.btn-default.btn-inverse.navbar-btn(href='/') Leave Demo
+            else
+              a.btn.btn-default.btn-inverse.navbar-btn(href='/demo') View Demo
 
     block content
 
