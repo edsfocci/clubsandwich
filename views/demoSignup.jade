@@ -1,0 +1,49 @@
+extends layout
+
+//- block stylesheets
+//-   link(href='/stylesheets/index.css', rel='stylesheet')
+
+block content
+  h1 User Registration
+
+  p Items marked with (*) are required
+
+  form(action='/demo/signup', method='post')
+    div.form-group
+      label.control-label(for='name-input') Name
+      div.input-group
+        span.input-group-addon
+          span.fa.fa-user
+        input.form-control(type='text', name='firstName', id='name-input',
+          placeholder='First Name')
+      div.input-group
+        span.input-group-addon
+          span.fa.fa-user
+        input.form-control(type='text', name='lastName',
+          placeholder='Last Name')
+    div.form-group
+      label.control-label(for='email-input') Email Address *
+      div.input-group
+        span.input-group-addon
+          span.fa.fa-envelope
+        input.form-control(type='email', name='email', id='email-input',
+          placeholder='Email', required='required')
+    div.form-group
+      label.control-label(for='password-input') Password *
+      div.input-group
+        span.input-group-addon
+          span.fa.fa-lock
+        input.form-control(type='password', name='password',
+          id='password-input', placeholder='Password', required='required')
+    div.form-group
+      label.control-label(for='pw-confirm-input') Password Confirmation *
+      div.input-group
+        span.input-group-addon
+          span.fa.fa-lock
+        input.form-control(type='password', name='passwordConfirmation',
+          id='pw-confirm-input', placeholder='Please retype your password',
+          required='required')
+    button.btn(type='submit') Register
+
+//- block scripts
+//-   script(src='/javascripts/index.js', type='text/javascript')

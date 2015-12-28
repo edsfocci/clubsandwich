@@ -1,0 +1,17 @@
+extends layout
+
+block stylesheets
+  link(href='/stylesheets/dashboard.css', rel='stylesheet')
+
+block content
+  #left-bar.main-areas.sides
+
+  #main-content.main-areas
+    h1 Dashboard
+
+  #right-bar.main-areas.sides
+    #create-club-btn.text-center
+      a.btn.btn-default(href='/demo/clubs/new') Create a Club
+
+//- block scripts
+//-   script(src='/javascripts/index.js', type='text/javascript')

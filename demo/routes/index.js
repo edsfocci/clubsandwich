@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.render('demoIndex', { demo: true });
 });
 
@@ -12,8 +12,12 @@ var User = require('../../models').User;
 var bcrypt = require('bcrypt-nodejs');
 // var passpor = require('../../config/passport');
 
-router.get('/signup', function(req, res, next) {
-  res.render('demoUserSignup', { subTitle: 'Register |', demo: true });
+router.get('/dashboard', function(req, res) {
+  res.render('demoDashboard', { subTitle: 'Dashboard |', demo: true });
+});
+
+router.get('/signup', function(req, res) {
+  res.render('demoSignup', { subTitle: 'Register |', demo: true });
 });
 
 router.post('/signup', function(req, res) {

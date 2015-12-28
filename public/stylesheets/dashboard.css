@@ -1,0 +1,25 @@
+.main-areas {
+  display: inline-block;
+  height: 100%;
+  float: left;
+}
+
+.main-areas.sides {
+  width: 150px;
+  background-color: #eee;
+}
+
+#main-content {
+  width: calc(100% - 300px);
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+#right-bar #create-club-btn a {
+  margin: 5px 0;
+}
+
+#right-bar #create-club-btn a:hover {
+  background-color: white;
+  border-color: #ccc;
+}
