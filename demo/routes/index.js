@@ -26,7 +26,7 @@ router.post('/signup', function(req, res) {
 
   .then(function(user) {
     if (user)
-      return res.redirect('/demo/users/' + user.id);
+      return res.redirect('/demo/dashboard');
 
     req.body.password = bcrypt.hash(req.body.password, null, null,
       function(err, hash) {
@@ -40,7 +40,7 @@ router.post('/signup', function(req, res) {
       .catch(function(err) { throw err; })
 
       .then(function(newUser) {
-        return res.redirect('/demo/users/' + newUser.id);
+        return res.redirect('/demo/dashboard');
       });
     });
   });
